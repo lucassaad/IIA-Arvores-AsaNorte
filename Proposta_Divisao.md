@@ -66,7 +66,7 @@ O repositório oficial de dados grandes (imagens e arquivos `.h5`) é:
 **Foco:** Refinamento dos dados, eliminação de ruídos das pseudo-labels e estruturação de validação confiável.
 
 *   **Pessoa 4 (Especialista em Anotação):** Configura a plataforma de curadoria (ex: Roboflow ou interface local de inspeção no notebook) para importar as imagens e pseudo-labels do HDF5, coordenando o esforço de limpeza do grupo.
-*   **Pessoa 5 (Revisor de Qualidade):** Executa a revisão manual detalhada, apagando as caixas absurdas geradas pelo DeepForest (ex: sombras, carros, telhados) e adicionando copas de árvores omitidas (falsos negativos).
+*   **Pessoa 5 - Lucas Saad - (Revisor de Qualidade):** Executa a revisão manual detalhada, apagando as caixas absurdas geradas pelo DeepForest (ex: sombras, carros, telhados) e adicionando copas de árvores omitidas (falsos negativos).
 *   **Pessoa 6 - Artur Kohara Guerra - (Estrategista de Particionamento):** Divide o HDF5 geograficamente por setores (Asa Norte/Asa Sul) para separar o conjunto de treino e validação, prevenindo vazamento de dados espacial. Gera o arquivo final `dataset_limpo.h5` e o arquivo de configuração `data.yaml`, salvando-os de volta no Google Drive.
 
 ---
